@@ -17,10 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - types-docutils
     - types-setuptools
 
@@ -30,6 +31,7 @@ test:
     - test -f $SP_DIR/pygments-stubs/__init__.pyi                 # [unix]
     - if not exist %SP_DIR%\\pygments-stubs\\__init__.pyi exit 1  # [win]
   requires:
+    - python {{ python_min }}
     - pip
 
 about:

@@ -1,4 +1,4 @@
-{% set version = "2.19.0.20250219" %}
+{% set version = "2.19.0.20250305" %}
 
 package:
   name: types-pygments
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/t/types-pygments/types_pygments-{{ version }}.tar.gz
-    sha256: a4a279338c96f3d4f2eb2c4d7c6c5593c88108b185bb5c664f943f781170cd14
+    sha256: 044c50e80ecd4128c00a7268f20355e16f5c55466d3d49dfda09be920af40b4b
   - url: https://raw.githubusercontent.com/python/typeshed/main/LICENSE
     sha256: 295f8538c94ae5c3043301cf7cff1c852dab6a786a8ddee471e061b40d5ecabe
 
